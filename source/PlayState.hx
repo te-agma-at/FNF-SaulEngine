@@ -37,6 +37,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxSort;
 import flixel.util.FlxStringUtil;
 import flixel.util.FlxTimer;
+import flixel.util.FlxAxes;
 import haxe.Json;
 import lime.utils.Assets;
 import openfl.Lib;
@@ -4525,6 +4526,17 @@ class PlayState extends MusicBeatState
 			doDeathCheck(true);
 		}
 
+		switch(daNote.noteType) {
+			case 'Bullet Note': //Bullet note
+				camGame.shake(0.05, 0.15, null, true, FlxAxes.Y);
+				camHUD.shake(0.05, 0.15, null, true, FlxAxes.Y);
+				FlxG.sound.play(Paths.sound('gunshot'), 0.8);
+				if(boyfriend.animation.getByName('hurt') != null) {
+					boyfriend.playAnim('hurt', true);
+					boyfriend.specialAnim = true;
+				}
+		}
+
 		//For testing purposes
 		//trace(daNote.missHealth);
 		songMisses++;
@@ -4672,6 +4684,17 @@ class PlayState extends MusicBeatState
 								boyfriend.specialAnim = true;
 							}
 					}
+				}
+
+				switch(note.noteType) {
+					case 'Bullet Note': //Bullet note
+						camGame.shake(0.05, 0.15, null, true, FlxAxes.Y);
+						camHUD.shake(0.05, 0.15, null, true, FlxAxes.Y);
+						FlxG.sound.play(Paths.sound('gunshot'), 0.8);
+						if(boyfriend.animation.getByName('dodge') != null) {
+							boyfriend.playAnim('dodge', true);
+							boyfriend.specialAnim = true;
+						}
 				}
 
 				note.wasGoodHit = true;
