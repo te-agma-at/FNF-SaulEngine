@@ -18,7 +18,6 @@ If you want video support on your mod, simply do `haxelib install hxCodec` on a 
 otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 
 # Psych Engine Credits
-_____________________________________
 ## Credits:
 * Shadow Mario - Programmer
 * RiverOaken - Artist
@@ -36,7 +35,6 @@ _____________________________________
 * Nebula the Zorua - LUA JIT Fork and some Lua reworks
 
 # Saul Engine Credits
-_____________________________________
 ## Credits:
 * te-agma-at - Everything
 
@@ -63,24 +61,31 @@ _____________________________________
 ### Week 3:
   * BF does "Hey!" during Philly Nice
   * Blammed has a cool new colors flash during that sick part of the song
+  * New Note Type: "Bullet". Boyfriend has to hit these notes to avoid losing a great amount of health. They appear exclusively in Blammed
 ### Week 4:
   * Better hair physics for Mom/Boyfriend (Maybe even slightly better than Week 7's :eyes:)
   * Henchmen die during all songs. Yeah :(
+  * New Note Type: "Lust". Boyfriend can hit these notes to regain health. They only appear in High and MILF
 ### Week 5:
   * Bottom Boppers and GF does "Hey!" animations during Cocoa and Eggnog
   * On Winter Horrorland, GF bops her head slower in some parts of the song.
 ### Week 6:
   * On Thorns, the HUD is hidden during the cutscene
   * Also there's the Background girls being spooky during the "Hey!" parts of the Instrumental
+  * New Note Type: "Soul". Letting Boyfriend hit this note will slowly drain health over time. Appears exclusively in Thorns
+### Week 7:
+  * Tankman will drain health per note hit in Stress
+  * Bullet Notes make a return in Guns and Stress
 
 ## Cool new Chart Editor changes and countless bug fixes
 ![](https://github.com/ShadowMario/FNF-PsychEngine/blob/main/docs/img/chart.png?raw=true)
 * You can now chart "Event" notes, which are bookmarks that trigger specific actions that usually were hardcoded on the vanilla version of the game.
 * Your song's BPM can now have decimal values
 * You can manually adjust a Note's strum time if you're really going for milisecond precision
-* You can change a note's type on the Editor, it comes with two example types:
-  * Alt Animation: Forces an alt animation to play, useful for songs like Ugh/Stress
-  * Hey: Forces a "Hey" animation instead of the base Sing animation, if Boyfriend hits this note, Girlfriend will do a "Hey!" too.
+* You can change a note's type on the Editor, it comes with three example types:
+* Alt Animation: Forces an alt animation to play, useful for songs like Ugh/Stress
+* Hey: Forces a "Hey" animation instead of the base Sing animation, if Boyfriend hits this note, Girlfriend will do a "Hey!" too.
+* Hurt Note: Of course, a bit of health is lost when Boyfriend hits this note.
 
 ## Multiple editors to assist you in making your own Mod
 ![Screenshot_3](https://user-images.githubusercontent.com/44785097/144629914-1fe55999-2f18-4cc1-bc70-afe616d74ae5.png)
@@ -97,6 +102,7 @@ _____________________________________
 
 ## Awards/Achievements
 * The engine comes with 16 example achievements that you can mess with and learn how it works (Check Achievements.hx and search for "checkForAchievement" on PlayState.hx)
+* 5 new achievements are added to Saul Engine; Middleman, 
 
 ## Options menu:
 * You can change Note colors, Delay and Combo Offset, Controls and Preferences there.
