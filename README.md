@@ -72,10 +72,8 @@ otherwise, you can delete the "VIDEOS_ALLOWED" Line on Project.xml
 ### Week 6:
   * On Thorns, the HUD is hidden during the cutscene
   * Also there's the Background girls being spooky during the "Hey!" parts of the Instrumental
-  * New Note Type: "Soul". Letting Boyfriend hit this note will slowly drain health over time. Appears exclusively in Thorns
 ### Week 7:
   * Tankman will drain health per note hit in Stress
-  * Bullet Notes make a return in Guns and Stress
 
 ## Cool new Chart Editor changes and countless bug fixes
 ![](https://github.com/ShadowMario/FNF-PsychEngine/blob/main/docs/img/chart.png?raw=true)
