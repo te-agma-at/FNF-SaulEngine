@@ -154,6 +154,8 @@ class Note extends FlxSprite
 					gfNote = true;
 				case 'Bullet Note':
 					ignoreNote = false;
+					noAnimation = true;
+					noMissAnimation = true;
 					reloadNote('BULLET');
 					noteSplashTexture = 'HURTnoteSplashes';
 					colorSwap.hue = 0;
