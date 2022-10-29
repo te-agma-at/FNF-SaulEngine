@@ -145,6 +145,14 @@ class Note extends FlxSprite
 						missHealth = 0.3;
 					}
 					hitCausesMiss = true;
+				case 'Lust Note':
+					ignoreNote = true;
+					reloadNote('LUST');
+					noteSplashTexture = 'LUSTnoteSplashes';
+					colorSwap.hue = 0;
+					colorSwap.saturation = 0;
+					colorSwap.brightness = 0;
+					hitHealth = 0.4;
 				case 'Alt Animation':
 					animSuffix = '-alt';
 				case 'No Animation':
