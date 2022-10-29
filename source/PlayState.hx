@@ -4686,17 +4686,6 @@ class PlayState extends MusicBeatState
 					}
 				}
 
-				switch(note.noteType) {
-					case 'Bullet Note': //Bullet note
-						camGame.shake(0.05, 0.15, null, true, FlxAxes.Y);
-						camHUD.shake(0.05, 0.15, null, true, FlxAxes.Y);
-						FlxG.sound.play(Paths.sound('gunshot'), 0.8);
-						if(boyfriend.animation.getByName('dodge') != null) {
-							boyfriend.playAnim('dodge', true);
-							boyfriend.specialAnim = true;
-						}
-				}
-
 				note.wasGoodHit = true;
 				if (!note.isSustainNote)
 				{
@@ -4709,6 +4698,16 @@ class PlayState extends MusicBeatState
 
 			if (!note.isSustainNote)
 			{
+				switch(note.noteType) {
+					case 'Bullet Note': //Bullet note
+						camGame.shake(0.05, 0.15, null, true, FlxAxes.Y);
+						camHUD.shake(0.05, 0.15, null, true, FlxAxes.Y);
+						FlxG.sound.play(Paths.sound('gunshot'), 0.8);
+						if(boyfriend.animation.getByName('dodge') != null) {
+							boyfriend.playAnim('dodge', true);
+							boyfriend.specialAnim = true;
+						}
+				}
 				combo += 1;
 				if(combo > 9999) combo = 9999;
 				popUpScore(note);
