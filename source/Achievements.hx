@@ -26,7 +26,10 @@ class Achievements {
 		["Hyperactive",					"Finish a Song without going Idle.",				'hype',					false],
 		["Just the Two of Us",			"Finish a Song pressing only two keys.",			'two_keys',				false],
 		["Toaster Gamer",				"Have you tried to run the game on a toaster?",		'toastie',				false],
-		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",	'debugger',				 true]
+		["Debugger",					"Beat the \"Test\" Stage from the Chart Editor.",	'debugger',				 true],
+		["Not Bad",						"Complete a Song under 10 Misses.",					'sdcb',					false],
+		["Uninjured",					"Complete a Song while keeping your Health maxed.",	'max_health',			false],
+		["But Nobody Came...",			"Finish a Song pressing only one key.",				'one_key',				false]
 	];
 	public static var achievementsMap:Map<String, Bool> = new Map<String, Bool>();
 
