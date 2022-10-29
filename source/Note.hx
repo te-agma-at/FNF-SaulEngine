@@ -162,7 +162,7 @@ class Note extends FlxSprite
 					colorSwap.saturation = 0;
 					colorSwap.brightness = 0;
 					missHealth = 0.6;
-					multSpeed = 1.1;
+					multSpeed = 1.9;
 			}
 			noteType = value;
 		}
