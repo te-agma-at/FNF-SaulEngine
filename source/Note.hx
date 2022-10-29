@@ -148,6 +148,7 @@ class Note extends FlxSprite
 				case 'Lust Note':
 					ignoreNote = true;
 					reloadNote('LUST');
+					noAnimation = true;
 					noteSplashTexture = 'LUSTnoteSplashes';
 					colorSwap.hue = 0;
 					colorSwap.saturation = 0;
